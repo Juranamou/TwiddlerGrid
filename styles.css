@@ -1,0 +1,114 @@
+/* These CSS rules apply to the <html>, <body>, and <div id="app"> HTML elements in index.html */
+html, body, #app {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Macondo', cursive;
+}
+
+/* Continue building out the CSS styling for your Twiddler app below! We got you started by
+providing a space for you to apply styles to your app's outermost HTML element - the #app itself. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* litterally just the background colors */
+#app {
+  background-color: green;
+  color: yellow;
+}
+
+/* update news button, margin puts it in the center */
+#update-feed {
+  background-color: yellow;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid black;
+  color: brown;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  width: 20%;
+}
+
+/* just changes the colors of things when you hover the buttons */
+.comment:hover, .retweet:hover, .like:hover, .share:hover, .username:hover{
+  color: #956E0D;
+  position: relative;
+  cursor: pointer;
+}
+
+.message {
+  grid-row: 1;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.username {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.timestamp {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.comment {
+  grid-row: 4;
+  grid-column: 1;
+  justify-self: center;
+}
+
+.retweet {
+  grid-row: 4;
+  grid-column: 2;
+  justify-self: center;
+}
+.like {
+  grid-row: 4;
+  grid-column: 3;
+  justify-self: center;
+}
+.share {
+  grid-row: 4;
+  grid-column: 4;
+  justify-self: center;
+}
+
+/* aligns the photo and contains its size */
+.profile-photo {
+  max-width: 64px;
+  max-height: 64px;
+  min-width: 64px;
+  min-height: 64px;
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* moves the entire tweet (picture, status, buttons) to the center and adds a border */
+.tweet {
+  border: 3px solid yellowgreen;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+
+/* centers the header and makes it bigger */
+ h1 {
+   font-size: 10vw;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+ }
+
